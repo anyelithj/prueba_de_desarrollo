@@ -1,0 +1,30 @@
+{
+  "name": "APICine",
+  "version": "1.0.0",
+  "description": "Api de Peliculas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Api",
+    "CRUD",
+    " MYSQL",
+    "Express",
+    "Node.js"
+  ],
+  "author": "Anyelith Jacobo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-myconnection": "^1.0.4",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "responsimple": "^1.0.1",
+    "sass": "^1.0.0-beta.4",
+    "serve-favicon": "^2.4.5"
+  }
+}
