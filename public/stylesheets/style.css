@@ -1,0 +1,71 @@
+html {
+    background-color: brown;
+}
+
+a,
+h1,
+h2,
+label {
+    color: aliceblue;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+.logo {
+    display: block;
+    margin: 1rem auto;
+    width: 450px;
+    height: 150px;
+    vertical-align: bottom;
+    background-size: contain;
+}
+
+.error {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: brown;
+    color: aliceblue;
+}
+
+.poster {
+    max-width: 100px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td,
+.table th {
+    padding: 1rem;
+}
+
+.table tr:first-child {
+    background-color: #292623;
+    color: brown;
+}
+
+.table tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+.table tr:nth-child(odd):not(:first-child) {
+    background-color: #eee;
+}
+
+.button {
+    padding: .5rem 1rem;
+    color: #fff;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .75;
+}
+
+.add {
+    background: #0b0;
+}

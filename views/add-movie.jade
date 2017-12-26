@@ -1,0 +1,24 @@
+extends layout.jade
+block content
+ section.container
+    include header.jade
+    .item
+        form.form(method="post" action="/")
+            fieldset
+                div
+                    label(for="id_pelicula") Id:
+                    input#movie_id(type="text", name="id_pelicula", required)
+                div
+                    label(for="nombre_pelicula") Nombre de Pelicula:
+                    input#title(type="text")(type="text", name="nombre_pelicula", required)
+                div
+                    label(for="fecha_finalizada") Fecha de finalización
+                    input#release_year(type="text")(type="text", name= "fecha_finalizada", required)
+                div
+                    label(for="idioma") idioma:
+                    inpu#rating(type="text", name="idioma", required)
+                div
+                    label(for="image") Poster:
+                    inpuT#image(type="text", name="image", required)
+                div
+                    input(type="submit", value="agregar")

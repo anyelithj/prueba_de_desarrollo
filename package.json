@@ -1,20 +1,19 @@
 {
-  "name": "APICine",
-  "version": "1.0.0",
-  "description": "Api de Peliculas",
-  "main": "app.js",
+  "name": "api-crud-mysql",
+  "version": "0.0.1",
+  "description": "Api CRUD de peliculas",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [
-    "Api",
+    "API",
     "CRUD",
-    " MYSQL",
-    "Express",
-    "Node.js"
+    "MYSQL",
+    "Peliculas"
   ],
-  "author": "Anyelith Jacobo",
+  "author": "anyelithJacobo",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -24,7 +23,6 @@
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "responsimple": "^1.0.1",
-    "sass": "^1.0.0-beta.4",
     "serve-favicon": "^2.4.5"
   }
 }

@@ -1,7 +1,13 @@
-extends layout.jade
+extends layout
+
 block content
-  h1= title
-  h2= description
-  pre.error
-    code #{error.stack}
-  a(href="/") Regresar
+    article.container
+        .item.center
+            h1= title
+            h2= description
+            h3
+                a(href="/") Regresar
+            pre.error.left
+                code #{error.stack}
+            
+

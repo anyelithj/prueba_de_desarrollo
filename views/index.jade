@@ -1,7 +1,30 @@
 extends layout.jade
 block content
-  section.container
-    .item.logo
-    .item
-      h1
-        a(href="/")= title
+ section.container
+  include header.jade
+  article.item
+    -if(data.length)
+        table.table
+          tr
+            th Id
+            th Nombre de Pelicula
+            th Fecha de finalización
+            th idioma
+            th Poster
+            th(colspan="2")
+              form(method="get" action="/agregar")
+                input(type="submit", value="agregar")
+          -each pelicula in data
+            tr
+              td #{pelicula.id_pelicula}
+              td #{pelicula.nombre_pelicula}
+              td #{pelicula.fecha_finalizada}
+              td #{pelicula.idioma}
+              td
+                img.poster(src="#pelicula.image}", alt="#{pelicula.title}")
+              td editar
+              td eliminar  
+      
+        
+    -else
+        p.error No Existe la Pelicula.
